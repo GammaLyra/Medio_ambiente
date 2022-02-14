@@ -21,7 +21,7 @@ Qué es lo que se muestra:
 	</ul> 
 	</li>
 	<li> <b>Temp_Paises.ipynb</b>: Se utiliza una base de datos que contiene información de la temperatura promedio medida a lo largo del tiempo en diferentes países y continentes. En este caso únicamente vamos a usar las medidas obtenidas para cada uno de los continentes (África, Europa, Asia, Norte América, Sud América y Oceanía).<br>
-* Base de datos obtenida de Kaggle [enlace Kaggle](https://www.kaggle.com/sachinsarkar/climate-change-global-temperature-data)<br><br>
+* Base de datos obtenida de Kaggle (https://www.kaggle.com/sachinsarkar/climate-change-global-temperature-data)<br><br>
 Qué es lo que se muestra:
 	<ul>
 		<li>Estadística de los datos</li>
