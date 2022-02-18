@@ -6,7 +6,7 @@ Notebooks:
 
 <ul>
 	<li> <b>Temp_Paises.ipynb</b>: Se utiliza una base de datos que contiene información de la temperatura promedio medida a lo largo del tiempo en diferentes países y continentes. En este caso únicamente vamos a usar las medidas obtenidas para cada uno de los continentes (África, Europa, Asia, Norte América, Sud América y Oceanía).<br><br>
-* Base de datos obtenida de Kaggle ex(https://www.kaggle.com/sachinsarkar/climate-change-global-temperature-data)<br><br>
+* Base de datos obtenida de Kaggle (https://www.kaggle.com/sachinsarkar/climate-change-global-temperature-data)<br><br>
 Qué es lo que se muestra:
 	<ul>
 		<li>Estadística de los datos:</li>
@@ -32,6 +32,7 @@ Qué es lo que se muestra:
 		</ul>
 	</ul>
 	</li>
+	<br><br>
 	<li> <b>Greenhouse_Gases.ipynb</b>: Usamos varias bases de datos obtenidas de NOAA con medidas globales de los gases de efecto invernadero a lo largo del tiempo (hay datos anuales y mensuales). <br>
 	* Referencia de los datos: Dr. Pieter Tans, NOAA/GML (gml.noaa.gov/ccgg/trends/) and Dr. Ralph Keeling, Scripps Institution of Oceanography (scrippsco2.ucsd.edu/)<br>  <br>
 Gases de los que tenemos datos:
