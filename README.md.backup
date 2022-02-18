@@ -5,6 +5,33 @@ Hay varios notebook de Python en los que representamos y analizamos diferentes d
 Notebooks:
 
 <ul>
+	<li> <b>Temp_Paises.ipynb</b>: Se utiliza una base de datos que contiene información de la temperatura promedio medida a lo largo del tiempo en diferentes países y continentes. En este caso únicamente vamos a usar las medidas obtenidas para cada uno de los continentes (África, Europa, Asia, Norte América, Sud América y Oceanía).<br><br>
+* Base de datos obtenida de Kaggle ex(https://www.kaggle.com/sachinsarkar/climate-change-global-temperature-data)<br><br>
+Qué es lo que se muestra:
+	<ul>
+		<li>Estadística de los datos:</li>
+			<ul>
+			<li>Resumen estadístico de los datos: Media, desviación estándar, valor máxima/mínima y cuartiles.</li>
+			<li>Los histogramas de la temperatura promedio de cada continente y su error.</li>
+			</ul>
+		<li>Distribución de los datos por meses:</li>
+		<ul>
+			<li>Boxplot de la temperatura medida cada mes (variable categórica) en cada uno de los continentes. Además añadimos cada una de las medidas de la temperatura como scatterplot. Se representan en un color diferentes los datos de los últimos 11 años para ver si se salen de la estadística.</li>
+			<li>Distribución (KDE) de la temperatura medida cada mes en los diferentes continentes.</li>
+		</ul>
+		<li>Representación de los datos:</li>
+		<ul>
+			<li>Representación de las temperaturas medidas mensualmente para cada continente justo la temperatura máxima, mínima y promedio calculados para cada año de cada continente.</li>
+			<li>Representación de la temperatura mínima, máxima y promedio por año en cada continente. </li>
+		</ul>
+		<li>Estudio de la estacionaridad:</li>
+		<ul>
+			<li>Representación de los datos junto con las estadísticas móviles (promedio y desviación estándar). Para ver visualmente sí son constantes con el tiempo.</li>
+			<li>Cálculo del promedio y la desviación estándar de las 4 regiones en las que hemos dividido los datos. Para comprobar si son constantes con el tiempo.</li>
+			<li>Test de Dickey-Fuller. Para ver con que nivel de confianza podemos rechazar la hipótesis nula.</li>
+		</ul>
+	</ul>
+	</li>
 	<li> <b>Greenhouse_Gases.ipynb</b>: Usamos varias bases de datos obtenidas de NOAA con medidas globales de los gases de efecto invernadero a lo largo del tiempo (hay datos anuales y mensuales). <br>
 	* Referencia de los datos: Dr. Pieter Tans, NOAA/GML (gml.noaa.gov/ccgg/trends/) and Dr. Ralph Keeling, Scripps Institution of Oceanography (scrippsco2.ucsd.edu/)<br>  <br>
 Gases de los que tenemos datos:
@@ -16,21 +43,27 @@ Gases de los que tenemos datos:
 	</ul>
 Qué es lo que se muestra:
 	<ul>
-		<li>Estadística de los datos anuales y mensuales</li>
-		<li>Los histogramas de los datos mensuales de cada gas</li>
+		<li>Información estadística:</li>
+		<ul> 
+			<li>Resumen estadístico de los datos: Media, desviación estándar, valor máxima/mínima y cuartiles de los datos anuales y mensuales</li>
+			<li>Los histogramas de los datos mensuales de cada gas</li>
+		</ul>
+		<li>Representación de los datos:</li>
+		<ul>
+			<li>Representación lineal de los datos medidos anualmente y mensualmente.</li>
+		</ul>
+		<li>Distribución de los datos:</li>
+		<ul>
+			<li>Boxplot de los datos mensuales para cada gas junto con los datos medidos en forma de scatter.</li>
+			<li>Distribución KDE de los gases medidos mensualmente para cada año.</li>
+		</ul>
+		<li>Estudio de la estacionaridad:</li>
+		<ul>
+			<li>Representación de los datos junto con las estadísticas móviles (promedio y desviación estándar). Para ver visualmente sí son constantes con el tiempo.</li>
+			<li>Cálculo del promedio y la desviación estándar de las 4 regiones en las que hemos dividido los datos. Para comprobar si son constantes con el tiempo.</li>
+			<li>Test de Dickey-Fuller. Para ver con que nivel de confianza podemos rechazar la hipótesis nula.</li>
+		</ul>
 	</ul> 
-	</li>
-	<li> <b>Temp_Paises.ipynb</b>: Se utiliza una base de datos que contiene información de la temperatura promedio medida a lo largo del tiempo en diferentes países y continentes. En este caso únicamente vamos a usar las medidas obtenidas para cada uno de los continentes (África, Europa, Asia, Norte América, Sud América y Oceanía).<br>
-* Base de datos obtenida de Kaggle [enlace Kaggle](https://www.kaggle.com/sachinsarkar/climate-change-global-temperature-data)<br><br>
-Qué es lo que se muestra:
-	<ul>
-		<li>Estadística de los datos</li>
-		<li>Los histogramas de la temperatura promedio de cada continente y su error.</li>
-		<li>Boxplot de la temperatura medida cada mes (variable categórica) en cada uno de los continentes. Además añadimos cada una de las medidas de la temperatura como scatterplot. Se representan en un color diferentes los datos de los últimos 11 años para ver si se salen de la estadística.</li>
-		<li>Distribución (KDE) de la temperatura medida cada mes en los diferentes continentes.</li>
-		<li>Representación de la temperatura mínima, máxima y promedio por año en cada continente. Variables calculadas por nosotros</li>
-		<li>Representación de las temperaturas medidas mensualmente para cada continente justo con el promedio móvil de la temperatura máxima, mínima y promedio. Usamos el promedio móvil para ver la tendencia a lo largo del tiempo.</li>
-	</ul>
 	</li>
 	<li><b>Temp_Global.ipynb</b>: Usamos una base de datos que contiene datos globales de la temperatura de la Tierra a lo largo de tiempo.  Información: temperatura promedio de la superficie, temperatura máxima de la superficie, temperatura mínima de la superficie y temperatura promedio de la superficie y el océano. <br>
 * Base de datos obtenida de Kaggle (https://www.kaggle.com/sachinsarkar/climate-change-global-temperature-data)<br><br>
