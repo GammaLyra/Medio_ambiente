@@ -34,7 +34,8 @@ Qué es lo que se muestra:
 	</li>
 	<br><br>
 	<li> <b>Greenhouse_Gases.ipynb</b>: Usamos varias bases de datos obtenidas de NOAA con medidas globales de los gases de efecto invernadero a lo largo del tiempo (hay datos anuales y mensuales). <br>
-	* Referencia de los datos: Dr. Pieter Tans, NOAA/GML (gml.noaa.gov/ccgg/trends/) and Dr. Ralph Keeling, Scripps Institution of Oceanography (scrippsco2.ucsd.edu/)<br>  <br>
+	* Referencia de los datos: Dr. Pieter Tans, NOAA/GML (gml.noaa.gov/ccgg/trends/) and Dr. Ralph Keeling, Scripps Institution of Oceanography (scrippsco2.ucsd.edu/) -> (https://gml.noaa.gov/ccgg/trends/)
+	<br> <br>
 Gases de los que tenemos datos:
 	<ul>
 	 	<li>CO2: Tenemos datos desde 01/01/1980 hasta 01/10/2021</li>
