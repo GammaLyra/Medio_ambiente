@@ -63,15 +63,17 @@ Qué es lo que se muestra:
 			<li>Representación de los datos junto con las estadísticas móviles (promedio y desviación estándar). Para ver visualmente sí son constantes con el tiempo.</li>
 			<li>Test de Dickey-Fuller. Para ver con que nivel de confianza podemos rechazar la hipótesis nula.</li>
 		</ul>
-		<li>Forecasting usando el modelo ARIMA:</li>
+		<li>Forecasting usando el modelo SARIMA:</li>
 		<ul>
 			<li>Separamos la serie temporal en dos partes, unos que utilizaremos para el entrenamiento del modelo (train) y otro que utilizaremos para testear el modelo (test).</li>
-			<li>Conversión de los datos usando una transformación logarítmica y el método de differencing. Tras la conversión de los datos volvemos a aplicar el estudio de estacionaridad para ver si los datos ya son estacionarios.</li>
-			<li>Usamos la función de autocorrelación (ACF) y la función de autocorrelación parcial (PACF) para determinar los mejores parámetros "p, d y q" para el modelo ARIMA. El parámetro "d" es el valor del shift usado para el differencing, por lo tanto para determinar cual es el mejor usamos también el test de Dickey-Fuller. </li>
-			<li>Aplicamos el modelo ARIMA con los parámetros que acabamos de determinar</li>
-			<li>Representamos los residuos y la distribución kde de los residuos para ver la calidad de los modelos</li>
-			<li>Utilizamos los datos test para testar la calidad de los datos</li>
-			<li>Sobre los datos predichos por el modelo, invertimos la transformación que habíamos hecho para convertir los datos en estacionarios. Para invertir el differing de los datos logarítmicos, lo primero que hacemos es determinar la suma acumulada en el índice y luego agregarle el número base.</li>			
+			<li>Aplicamos el método de diferenciado (differencing) sobre los datos observados para estimar el parámetro "d" del modelo. Usamos el estudio de estacionaridad para determinar cuándo la serie es estacionaria. </li>
+			<li> Usamos la función de autocorrelación (ACF) y la función de autocorrelación parcial (PACF) de los datos tras aplicar el diferenciado sobre los datos observados, para estimar cuales podrían ser los mejores valores para los parámetros "p" y "q".</li>
+			<li>Estimamos las observaciones estacionales [obs(seasonal)=obs(T)-obs(T-12)] y aplicamos el estudio de estacionaridad para ver si son estacionarios.</li>
+			<li>Si los datos no son estacionarios, aplicamos el método de diferenciado sobre estas observaciones para determinar el valor de "D".</li>					
+			<li>Usamos ACF y PACF sobre las observaciones estacionales, para estimar cuales podrían ser los parámetros "P" y "Q".</li>
+			<li>Usamos la función "auto_arima" del modulo "pmdarima" para ver cual es la mejor combinación de los parámetros del modelo SARIMA</li>
+			<li>Aplicamos el modelo SARIMA sobre los datos de entrenamiento (train) y representamos la distribución kde de los residuos para ver la calidad del modelo.</li>
+			<li>Usamos el modelo que acabamos de crear para predecir los datos en el rango temporal en el que están los datos de test y las comparamos. Estimamos valor de R².</li>
 		</ul>
 	</ul> 
 	</li>
