@@ -72,7 +72,7 @@ Qué es lo que se muestra:
 			<li>Si los datos no son estacionarios, aplicamos el método de diferenciado sobre estas observaciones para determinar el valor de "D".</li>					
 			<li>Usamos ACF y PACF sobre las observaciones estacionales, para estimar cuales podrían ser los parámetros "P" y "Q".</li>
 			<li>Usamos la función "auto_arima" del modulo "pmdarima" para ver cual es la mejor combinación de los parámetros del modelo SARIMA</li>
-			<li>Aplicamos el modelo SARIMA sobre los datos de entrenamiento (train) y representamos la distribución kde de los residuos para ver la calidad del modelo.</li>
+			<li>Aplicamos el modelo SARIMA sobre los datos de entrenamiento (train). Para determinar la calidad del modelo representamos los residuos estandarizados, el histograma de los residuos junto su distribución kde y la distribución normal, la gráfica Q-Q normal y el correlograma.</li>
 			<li>Usamos el modelo que acabamos de crear para predecir los datos en el rango temporal en el que están los datos de test y las comparamos. Estimamos valor de R².</li>
 		</ul>
 	</ul> 
