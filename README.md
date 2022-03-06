@@ -27,8 +27,22 @@ Qué es lo que se muestra:
 		<li>Estudio de la estacionaridad:</li>
 		<ul>
 			<li>Representación de los datos junto con las estadísticas móviles (promedio y desviación estándar). Para ver visualmente sí son constantes con el tiempo.</li>
+			<li>Estimación de la media y la desviación estandar de las 4 regiones en las que hemos separado los datos, para ver si son iguales y por lo tanto son constantes en el tiempo.</li>
 			<li>Test de Dickey-Fuller. Para ver con que nivel de confianza podemos rechazar la hipótesis nula.</li>
 		</ul>
+		<li>Forecasting usando el modelo SARIMA:</li>
+		<ul>
+			<li>Separamos la serie temporal en dos partes, unos que utilizaremos para el entrenamiento del modelo (train) y otro que utilizaremos para testear el modelo (test).</li>
+			<li>Aplicamos el método de diferenciado (differencing) sobre los datos observados para estimar el parámetro "d" del modelo. Usamos el estudio de estacionaridad para determinar cuándo la serie es estacionaria. </li>
+			<li> Usamos la función de autocorrelación (ACF) y la función de autocorrelación parcial (PACF) de los datos tras aplicar el diferenciado sobre los datos observados, para estimar cuales podrían ser los mejores valores para los parámetros "p" y "q".</li>
+			<li>Estimamos las observaciones estacionales [obs(seasonal)=obs(T)-obs(T-12)] y aplicamos el estudio de estacionaridad para ver si son estacionarios.</li>
+			<li>Si los datos no son estacionarios, aplicamos el método de diferenciado sobre estas observaciones para determinar el valor de "D".</li>					
+			<li>Usamos ACF y PACF sobre las observaciones estacionales, para estimar cuales podrían ser los parámetros "P" y "Q".</li>
+			<li>Usamos la función "auto_arima" del modulo "pmdarima" para ver cual es la mejor combinación de los parámetros del modelo SARIMA</li>
+			<li>Aplicamos el modelo SARIMA sobre los datos de entrenamiento (train). Para determinar la calidad del modelo representamos los residuos estandarizados, el histograma de los residuos junto su distribución kde y la distribución normal, la gráfica Q-Q normal y el correlograma.</li>
+			<li>Usamos el modelo que acabamos de crear para predecir los datos en el rango temporal en el que están los datos de test y las comparamos. Estimamos valor de R².</li>
+		</ul>
+	</ul> 
 	</ul>
 	</li>
 	<br><br>
